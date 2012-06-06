@@ -4,7 +4,7 @@ require File.expand_path('../lib/itis/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Oto Brglez"]
   gem.email         = ["otobrglez@gmail.com"]
-  gem.description   = %q{Ruby API for TIS}
+  gem.description   = %q{Ruby API for TIS / Telefonski Imenik Slovenije}
   gem.summary       = %q{Ruby API and console client for Telefonski Imenik Slovenije}
   gem.homepage      = "https://github.com/otobrglez/itis"
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "itis"
   gem.require_paths = ["lib"]
-  gem.version       = '0.0.1'
+  gem.version       = Itis::VERSION
 
   gem.has_rdoc      = false
   gem.bindir        = 'bin'
