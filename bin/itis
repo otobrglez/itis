@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'itis'
+
+if ARGV[0].nil?
+	puts("Missing search attribute...") 
+	exit(1)
+end
+
+results = Itis.search(ARGV[0])
+
+unless results.empty?
+	results.each do |result|
+		if result.person?
+			puts "#{result.text} - #{result.description} - #{result.phones.join(",")}"
+		else
+			puts "#{result.text} - #{result.description}"
+		end
+	end
+else
+	puts "No results."
+end

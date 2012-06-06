@@ -1,7 +1,4 @@
-ITIS - Ruby API for Telefonski Imenik Slovenije
+# Itis - Ruby API for Telefonski Imenik Slovenije
 
-By Oto Brglez - <oto.brglez@opalab.com>
-
-Use as you please...
-
-
+This API uses search suggestion/opensearch and XML to do lookups.
+GEM also installs simple command line tool.
